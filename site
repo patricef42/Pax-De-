@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pax Dei - Guide Complet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0a0a0a;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #0a0a0a;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        form button {
+            background-color: #ffcc00;
+            color: #000;
+            cursor: pointer;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: none;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffcc00;
+            color: #000;
+            cursor: pointer;
+        }
+        #map {
+            height: 400px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Pax Dei</h1>
+        <p>Un monde médiéval immersif et social</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#trailer">Trailer</a>
+        <a href="#news">Actualités</a>
+        <a href="#crafts">Crafts et Progression</a>
+        <a href="#biomes">Biomes</a>
+        <a href="#bestiaire">Bestiaire</a>
+        <a href="#quetes">Quêtes</a>
+        <a href="#communaute">Communauté</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#liens-utiles">Liens Utiles</a>
+        <a href="#blog">Blog</a>
+        <a href="#carte">Carte</a>
+        <a href="#calculateur">Calculateur</a>
+    </nav>
+
+    <!-- Barre de recherche -->
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Rechercher...">
+        <button onclick="searchSite()">Rechercher</button>
+    </div>
+
+    <!-- Section Présentation -->
+    <section id="presentation">
+        <h2>Présentation</h2>
+        <p>
+            **Pax Dei** est un MMO médiéval immersif qui plonge les joueurs dans un monde ouvert persistant, inspiré du Moyen Âge. Le jeu met l'accent sur la construction, l'exploration, et les interactions sociales, offrant une expérience unique où chaque joueur contribue à façonner l'univers.
+        </p>
+        <div class="gallery">
+            <img src="https://www.paxdei.com/images/world.jpg" alt="Monde de Pax Dei">
+            <img src="https://www.paxdei.com/images/village.jpg" alt="Village médiéval">
+        </div>
+    </section>
+
+    <!-- Section Gameplay -->
+    <section id="gameplay">
+        <h2>Gameplay</h2>
+        <p>
+            Le gameplay de **Pax Dei** repose sur plusieurs piliers essentiels :
+        </p>
+        <ul>
+            <li><strong>Construction :</strong> Construisez des maisons, des forteresses, et des villages entiers.</li>
+            <li><strong>Exploration :</strong> Découvrez des biomes variés et trouvez des ressources rares.</li>
+            <li><strong>Survie :</strong> Gérez des ressources et affrontez des dangers.</li>
+            <li><strong>Social :</strong> Collaborez avec d'autres joueurs pour prospérer.</li>
+        </ul>
+        <div class="gallery">
+            <img src="https://www.paxdei.com/images/construction.jpg" alt="Construction dans Pax Dei">
+            <img src="https://www.paxdei.com/images/exploration.jpg" alt="Exploration dans Pax Dei">
+        </div>
+    </section>
+
+    <!-- Section Trailer -->
+    <section id="trailer">
+        <h2>Trailer</h2>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Section Actualités -->
+    <section id="news">
+        <h2>Actualités</h2>
+        <article>
+            <h3>Nouvelle mise à jour : Ajout des biomes marécageux</h3>
+            <p>Découvrez les nouveaux biomes marécageux et leurs dangers.</p>
+        </article>
+        <article>
+            <h3>Événement communautaire : La Grande Chasse</h3>
+            <p>Participez à la Grande Chasse pour gagner des récompenses exclusives.</p>
+        </article>
+    </section>
+
+    <!-- Section Crafts et Progression -->
+    <section id="crafts">
+        <h2>Crafts et Progression</h2>
+        <p>
+            Les crafts sont essentiels pour survivre et prospérer dans **Pax Dei**.
+        </p>
+        <div class="gallery">
+            <img src="https://www.paxdei.com/images/craft1.jpg" alt="Craft de base">
+            <img src="https://www.paxdei.com/images/craft2.jpg" alt="Construction d'abri">
+        </div>
+    </section>
+
+    <!-- Section Biomes -->
+    <section id="biomes">
+        <h2>Biomes</h2>
+        <p>
+            Découvrez les biomes variés de **Pax Dei** et leurs ressources uniques.
+        </p>
+        <div class="gallery">
+            <img src="https://www.paxdei.com/images/forest.jpg" alt="Forêt">
+            <img src="https://www.paxdei.com/images/mountains.jpg" alt="Montagnes">
+        </div>
+    </section>
+
+    <!-- Section Bestiaire -->
+    <section id="bestiaire">
+        <h2>Bestiaire</h2>
+        <p>
+            Découvrez les créatures et ennemis que vous rencontrerez dans **Pax Dei**.
+        </p>
+        <div class="gallery">
+            <img src="https://www.paxdei.com/images/wolf.jpg" alt="Loup">
+            <img src="https://www.paxdei.com/images/bear.jpg" alt="Ours">
+        </div>
+    </section>
+
+    <!-- Section Quêtes -->
+    <section id="quetes">
+        <h2>Quêtes</h2>
+        <p>
+            Explorez les quêtes de **Pax Dei** pour progresser dans le jeu.
+        </p>
+    </section>
+
+    <!-- Section Communauté -->
+    <section id="communaute">
+        <h2>Communauté</h2>
+        <p>
+            Collaborez avec d'autres joueurs pour construire des villages et prospérer.
+        </p>
+    </section>
+
+    <!-- Section Galerie -->
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="https://www.paxdei.com/images/screenshot1.jpg" alt="Capture d'écran de Pax Dei - Forêt">
+            <img src="https://www.paxdei.com/images/screenshot2.jpg" alt="Capture d'écran de Pax Dei - Village">
+            <img src="https://www.paxdei.com/images/artwork1.jpg" alt="Artwork de Pax Dei - Paysage">
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section id="faq">
+        <h2>FAQ</h2>
+        <p>
+            Réponses aux questions fréquentes sur **Pax Dei**.
+        </p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Section Liens Utiles -->
+    <section id="liens-utiles">
+        <h2>Liens Utiles</h2>
+        <ul>
+            <li><a href="https://www.paxdei.com" target="_blank">Site officiel de Pax Dei</a></li>
+            <li><a href="https://discord.gg/paxdei" target="_blank">Serveur Discord communautaire</a></li>
+            <li><a href="https://twitter.com/paxdei" target="_blank">Compte Twitter officiel</a></li>
+        </ul>
+    </section>
+
+    <!-- Section Blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>Astuce : Comment construire un village efficace</h3>
+            <p>Apprenez à organiser votre village pour maximiser votre productivité.</p>
+        </article>
+        <article>
+            <h3>Guide : Les meilleures techniques de chasse</h3>
+            <p>Découvrez comment chasser efficacement pour survivre dans **Pax Dei**.</p>
+        </article>
+    </section>
+
+    <!-- Section Carte Interactive -->
+    <section id="carte">
+        <h2>Carte Interactive</h2>
+        <div id="map"></div>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script>
+            const map = L.map('map').setView([50, 10], 4); // Coordonnées et zoom
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+            }).addTo(map);
+
+            // Ajouter des marqueurs pour les biomes
+            L.marker([50, 10]).addTo(map)
+                .bindPopup('Forêt : Bois, Fibres, Gibier')
+                .openPopup();
+            L.marker([52, 12]).addTo(map)
+                .bindPopup('Montagnes : Pierre, Minerai de fer');
+        </script>
+    </section>
+
+    <!-- Section Calculateur de Ressources -->
+    <section id="calculateur">
+        <h2>Calculateur de Ressources</h2>
+        <label for="bois">Quantité de bois nécessaire :</label>
+        <input type="number" id="bois" placeholder="Bois">
+        <label for="pierre">Quantité de pierre nécessaire :</label>
+        <input type="number" id="pierre" placeholder="Pierre">
+        <button onclick="calculerRessources()">Calculer</button>
+        <p id="resultat"></p>
+        <script>
+            function calculerRessources() {
+                const bois = document.getElementById('bois').value;
+                const pierre = document.getElementById('pierre').value;
+                const resultat = `Vous avez besoin de ${bois} bois et ${pierre} pierre.`;
+                document.getElementById('resultat').textContent = resultat;
+            }
+        </script>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2023 - Tous droits réservés. Site non officiel sur Pax Dei.</p>
+        <p><a href="#top">Retour en haut</a></p>
+    </footer>
+
+    <!-- Script pour la recherche -->
+    <script>
+        function searchSite() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (section.textContent.toLowerCase().includes(query)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
